@@ -2,6 +2,7 @@ require "toqui/engine"
 require "toqui/exceptions"
 require "toqui/che"
 
+require "toqui/rails/routes"
 module Toqui
   mattr_accessor :user_class
   @user_class = "User"

@@ -20,8 +20,8 @@ module Toqui
         created_resource = self.create args.except(:password, :password_confirmation)
         if created_resource
           Toqui::Password.create(
-            password: password
-            password_confirmation: password_confirmation
+            password: password,
+            password_confirmation: password_confirmation,
             user_id: created_resource.id)
         end
         puts "This registers users"

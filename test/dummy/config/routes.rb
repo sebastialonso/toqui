@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount Toqui::Engine => "/toqui"
+  toqui_lift_routes
 end
