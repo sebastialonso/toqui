@@ -1,0 +1,20 @@
+<h1>Registrations#new</h1>
+<%= form_for @user, as: params_name_for_user_class, url: sign_up_path, method: :post do |f| %>
+  <% user_class_attributes.each do |attri| %>
+    <div class="field">
+      <%= label_for attri, f %><br/>
+      <%= input_for attri, f %>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :password %><br/>
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation %><br/>
+    <%= f.password_field :password_confirmation %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Save" %>
+  </div>
+<% end %>
