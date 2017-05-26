@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  toqui_lift_routes
+  get 'home/index'
+
+  # Pass as: :api, if you need routes for an API JSON
+  # toqui_lift as: :api
+  toqui_lift
+  root "home#index"
 end

@@ -1,5 +1,7 @@
 module Toqui
   class Password < ApplicationRecord
+    self.table_name = "toqui_passwords"
+
     belongs_to :user, class_name: Toqui.user_class.to_s
     has_secure_password
 

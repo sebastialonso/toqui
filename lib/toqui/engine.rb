@@ -3,7 +3,7 @@ module Toqui
     # isolate_namespace Toqui
 
     initializer "toqui.routes" do
-      Toqui::Rails::Routes.install!
+      Toqui::Rails::Routes.import
     end
   end
 end
